@@ -1,5 +1,5 @@
 {
-  "name": "debug_002_RRDB_ESRGAN_x4_DIV2K" //  please remove "debug_" during training
+  "name": "002_RRDB_ESRGAN_x4_DIV2K" //  please remove "debug_" during training
   , "use_tb_logger": true
   , "model":"srragan"
   , "scale": 4
@@ -9,8 +9,8 @@
     "train": {
       "name": "DIV2K"
       , "mode": "LRHR"
-      , "dataroot_HR": "/mnt/SSD/xtwang/BasicSR_datasets/DIV2K800/DIV2K800_sub.lmdb"
-      , "dataroot_LR": "/mnt/SSD/xtwang/BasicSR_datasets/DIV2K800/DIV2K800_sub_bicLRx4.lmdb"
+      , "dataroot_HR": "/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/DIV2K800_sub.lmdb"
+      , "dataroot_LR": "/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/DIV2K800_sub_bicLRx4.lmdb"
       , "subset_file": null
       , "use_shuffle": true
       , "n_workers": 8
@@ -20,15 +20,15 @@
       , "use_rot": true
     }
     , "val": {
-      "name": "val_set14_part"
+      "name": "val_part"
       , "mode": "LRHR"
-      , "dataroot_HR": "/mnt/SSD/xtwang/BasicSR_datasets/val_set14_part/Set14"
-      , "dataroot_LR": "/mnt/SSD/xtwang/BasicSR_datasets/val_set14_part/Set14_bicLRx4"
+      , "dataroot_HR": "/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/Validation/HR"
+      , "dataroot_LR": "/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/Validation/LR_bicubic"
     }
   }
 
   , "path": {
-    "root": "/home/xtwang/Projects/BasicSR"
+    "root": "/Users/beantoan/UnicalSubjects/ML/Project/BasicSR"
     , "pretrain_model_G": "../experiments/pretrained_models/RRDB_PSNR_x4.pth"
   }
 

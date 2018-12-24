@@ -9,8 +9,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.progress_bar import ProgressBar
 
 # configurations
-img_folder = '/mnt/SSD/xtwang/BasicSR_datasets/DIV2K800/DIV2K800/*'  # glob matching pattern
-lmdb_save_path = '/mnt/SSD/xtwang/BasicSR_datasets/DIV2K800/DIV2K800.lmdb'  # must end with .lmdb
+img_folder = '/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/Train/HR/*'  # glob matching pattern
+lmdb_save_path = '/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/Train/HR.lmdb'  # must end with .lmdb
 
 img_list = sorted(glob.glob(img_folder))
 dataset = []
