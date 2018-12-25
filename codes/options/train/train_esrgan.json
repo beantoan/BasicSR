@@ -9,8 +9,8 @@
     "train": {
       "name": "DIV2K"
       , "mode": "LRHR"
-      , "dataroot_HR": "/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/DIV2K800_sub.lmdb"
-      , "dataroot_LR": "/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/DIV2K800_sub_bicLRx4.lmdb"
+      , "dataroot_HR": "/Data/DIV2K800_sub.lmdb"
+      , "dataroot_LR": "/Data/DIV2K800_sub_bicLRx4.lmdb"
       , "subset_file": null
       , "use_shuffle": true
       , "n_workers": 8
@@ -22,13 +22,13 @@
     , "val": {
       "name": "val_part"
       , "mode": "LRHR"
-      , "dataroot_HR": "/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/Validation/HR"
-      , "dataroot_LR": "/Users/beantoan/UnicalSubjects/ML/Project/DIV2K/Data/Validation/LR_bicubic"
+      , "dataroot_HR": "/Data/Validation/HR"
+      , "dataroot_LR": "/Data/Validation/LR_bicubic"
     }
   }
 
   , "path": {
-    "root": "/Users/beantoan/UnicalSubjects/ML/Project/BasicSR"
+    "root": "/Project/BasicSR"
     , "pretrain_model_G": "../experiments/pretrained_models/RRDB_PSNR_x4.pth"
   }
 
