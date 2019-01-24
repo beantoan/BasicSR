@@ -23,12 +23,12 @@
       "name": "val_part"
       , "mode": "LRHR"
       , "dataroot_HR": "/home/beantoan/task2/data/valid/DIV2K_valid_HR"
-      , "dataroot_LR": "/home/beantoan/task2/data/valid/DIV2K_valid_LR_bicubic"
+      , "dataroot_LR": "/home/beantoan/task2/data/valid/DIV2K_valid_LR_bicubic_X4"
     }
   }
 
   , "path": {
-    "root": "/home/beantoan/BasicSR"
+    "root": "/home/beantoan/task2/BasicSR"
     , "pretrain_model_G":null
   }
 
