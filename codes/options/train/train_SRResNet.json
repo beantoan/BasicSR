@@ -1,5 +1,7 @@
+// Not total the same as SRResNet in <Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network>
+// With 16 Residual blocks w/o BN
 {
-  "name": "debug_001_RRDB_PSNR_x4_DIV2K" //  please remove "debug_" during training
+  "name": "debug_001_SRResNet_PSNR_x4_DIV2K" //  please remove "debug_" during training
   , "use_tb_logger": true
   , "model":"sr"
   , "scale": 4
@@ -34,15 +36,13 @@
   }
 
   , "network_G": {
-    "which_model_G": "RRDB_net" // RRDB_net | sr_resnet
+    "which_model_G": "sr_resnet" // RRDB_net | sr_resnet
     , "norm_type": null
     , "mode": "CNA"
     , "nf": 64
-    , "nb": 23
+    , "nb": 16
     , "in_nc": 3
     , "out_nc": 3
-    , "gc": 32
-    , "group": 1
   }
 
   , "train": {
