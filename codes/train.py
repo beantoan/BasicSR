@@ -135,7 +135,7 @@ def main():
                     gt_img = util.tensor2img(visuals['HR'])  # uint8
 
                     # Save SR images for reference
-                    save_img_path = os.path.join(img_dir, '{:s}_{:d}.png'.format(\
+                    save_img_path = os.path.join(img_dir, '{:s}_{:d}.png'.format(
                         img_name, current_step))
                     util.save_img(sr_img, save_img_path)
 
