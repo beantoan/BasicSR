@@ -29,7 +29,7 @@
 
   , "path": {
     "root": "/home/beantoan/task2/BasicSR"
-    , "resume_state": "/home/beantoan/task2/BasicSR/experiments/002_RRDB_ESRGAN_x4_DIV2K/training_state/40000.state"
+    , "resume_state": "/home/beantoan/task2/BasicSR/experiments/002_RRDB_ESRGAN_x4_DIV2K/training_state/200000.state"
     , "pretrain_model_G":null
   }
 
