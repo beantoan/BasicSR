@@ -1,0 +1,1 @@
+python codes/gen.py models/200000_G.pth LR results
